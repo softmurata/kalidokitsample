@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- HTML Meta Tags -->
+        <title>KalidoKit - Face and Body Rig Solver</title>
+        <!--     Basic Three.js -->
+        <script src="https://unpkg.com/three@0.133.0/build/three.js"></script>
+        <!--     GLTF Loader for Three.js -->
+        <script src="https://unpkg.com/three@0.133.0/examples/js/loaders/GLTFLoader.js"></script>
+        <!--     Orbit Controls for Three.js -->
+        <script src="https://unpkg.com/three@0.133.0/examples/js/controls/OrbitControls.js"></script>
+        <!--     VRM Loader for Three.js -->
+        <script src="https://unpkg.com/@pixiv/three-vrm@0.6.7/lib/three-vrm.js"></script>
+        <!--     Mediapipe or Tensorflow.js -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.5.1635989137/holistic.js"
+        crossorigin="anonymous"
+        ></script>
+
+        <!--     Mediapipe Drawing Tools -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+        crossorigin="anonymous"
+        ></script>
+        <!--     Mediapipe Camera Tools -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+        crossorigin="anonymous"
+        ></script>
+        <!--     Kalidokit Kinematic Solver -->
+        <script src="https://cdn.jsdelivr.net/npm/kalidokit@1.0/dist/kalidokit.umd.js"></script>
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+        <div class="preview">
+            <video class="input_video" width="1280px" height="720px"></video>
+            <canvas class="guides"></canvas>
+        </div>
+        <script src="kalidokit.js" type="module" defer></script>
+    </body>
+</html>
